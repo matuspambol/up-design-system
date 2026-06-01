@@ -1,0 +1,206 @@
+<!DOCTYPE html><html class="light" lang="en" style="width: 1280px; height: 5690px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Guía de Estilo Institucional | Universidad Panamericana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "outline": "#8a7174","inverse-surface": "#2f3131","primary": "#6c0128","error": "#ba1a1a",
+        "primary-fixed": "#ffd9dd","surface": "#f9f9f9","on-surface-variant": "#564144",
+        "surface-container": "#EEEEEE","background": "#f9f9f9","on-secondary": "#ffffff",
+        "on-error": "#ffffff","on-primary-container": "#ff9faf","inverse-on-surface": "#f1f1f1",
+        "tertiary": "#013467","on-tertiary-fixed-variant": "#1f477b","up-gold": "#C8A568",
+        "secondary-fixed-dim": "#e6c181","outline-variant": "#ddbfc2","surface-bright": "#f9f9f9",
+        "on-primary": "#ffffff","on-secondary-container": "#795c27","surface-tint": "#a73450",
+        "on-tertiary-fixed": "#001b3c","surface-container-highest": "#e2e2e2","surface-dim": "#dadada",
+        "secondary": "#765a24","on-secondary-fixed": "#271900","surface-container-low": "#f3f3f3",
+        "secondary-container": "#fed796","primary-fixed-dim": "#ffb2bd","on-error-container": "#93000a",
+        "on-secondary-fixed-variant": "#5c420e","on-primary-fixed-variant": "#871b3a",
+        "on-background": "#1a1c1c","up-maroon": "#8C1F3D","secondary-fixed": "#ffdea8",
+        "up-green": "#00685E","on-tertiary": "#ffffff","up-blue": "#003366",
+        "primary-container": "#8c1f3d","on-tertiary-container": "#98bcf7","tertiary-fixed-dim": "#a7c8ff",
+        "error-container": "#ffdad6","on-primary-fixed": "#400014","tertiary-fixed": "#d5e3ff",
+        "surface-container-lowest": "#ffffff","inverse-primary": "#ffb2bd","on-surface": "#1a1c1c",
+        "surface-variant": "#e2e2e2","surface-container-high": "#e8e8e8","tertiary-container": "#244b7f",
+        "prestige-bronze": "#765A24"
+      },
+      borderRadius: {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+      fontFamily: {
+        "display-large": ["EB Garamond","Noto Serif"],"nav-link": ["Inter"],"label-micro": ["Inter"],
+        "headline-medium": ["EB Garamond","Noto Serif"],"body-medium": ["Inter"],"body-large": ["Inter"],
+        "title-serif-italic": ["EB Garamond","Noto Serif"],"noto-serif": ["Noto Serif","serif"]
+      }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Inter', sans-serif; }
+.font-serif-up { font-family: 'EB Garamond', 'Noto Serif', serif; }
+.gold-accent { width: 40px; height: 2px; background-color: #765a24; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.header-bg-texture {
+  background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ujiXp8k7C_kMUvqzUiUVaReFyYJdm9OSM_jfMydMsSxFJQqlF9CpPBwNHRrDfjlJAhZAaI-ad2lbC3aHrK6vs-XZz_qbULiqNZpzIMaHVI-8ei1ph670NrC7eUTwLC8gCDGyDtpyWh3xt3xSVdRdlxrbeIYy-qvk41o_Gegol8fjkTaJ_4PZAuhtcXjxCSlxeewmYh-KGkIYaW8t9ZDbb-RUwNOD7qQ9seBQ-XAgHz25D8tRcCCG_w0c8o');
+  background-size: cover; background-position: center;
+}
+</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/10">
+<header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl top-0 sticky z-50 shadow-[0_12px_32px_rgba(26,28,28,0.06)]">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+<div class="font-serif-up text-xl font-bold tracking-tighter text-[#8C1F3D]">Universidad Panamericana</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-xs font-medium tracking-widest uppercase" href="#">Programs</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-xs font-medium tracking-widest uppercase" href="#">Admissions</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-xs font-medium tracking-widest uppercase" href="#">Research</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-xs font-medium tracking-widest uppercase" href="#">Faculty</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-xs font-medium tracking-widest uppercase" href="#">Campus Life</a>
+</nav>
+<button class="bg-primary text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-primary-container transition-all active:scale-95">Apply Now</button>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-12 pb-24">
+<section class="py-24 grid grid-cols-12 gap-6 items-end relative overflow-hidden">
+<div class="col-span-12 md:col-span-8 z-10">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-[0.6875rem] font-bold tracking-[0.2em] uppercase text-primary">SISTEMA DE DISEÑO</span>
+<div class="gold-accent"></div>
+</div>
+<h1 class="text-6xl md:text-8xl font-serif-up text-on-background leading-[1.1] tracking-tight mb-8">Design System<div>Universidad Panamericana</div></h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">A comprehensive guide to the visual identity and digital presence of Universidad Panamericana. Maintaining institutional excellence through precise design application.</p>
+</div>
+<div class="col-span-12 md:col-span-4 flex justify-end z-10">
+<div class="text-right border-r-4 border-up-gold pr-6">
+<span class="text-[0.6875rem] font-bold tracking-[0.15em] uppercase text-secondary">Universidad Panamericana</span>
+</div>
+</div>
+</section>
+<!-- Logo Section -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="text-[0.6875rem] font-bold tracking-[0.2em] uppercase text-primary">01</span>
+<h2 class="text-3xl font-serif-up">Brand Marks</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-12 flex flex-col items-center justify-center min-h-[400px]">
+<img alt="Universidad Panamericana Horizontal Logo" class="w-full max-w-md h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8M-DAtRUrjpVdm5YJodH69KmaV3UnHFPUhgsJQ0TZY6KGJsdn_Ky_8itnOoBL_eHd6YzWqYIc36aPejlckJQRf_7gkFXfSuA0JgCmQpHSn7DulfvJ-AnbdnCCwn0x-krOnVI1BWIrqxQzc3nm8rqECAwvzLJEkF9_435AN9iafUauX55ZRR33r0KnVKr55jQ_5QYZJ22vdVWc8XCh_j2wxsCmb7XABOXPJAIwkalyU7Z0xp002yxtRC2xvRsWsjNj-fMGPbkz0zNF">
+<p class="mt-8 text-xs font-bold tracking-widest uppercase text-on-surface-variant">Primary Horizontal Logo</p>
+</div>
+<div class="bg-primary p-12 flex flex-col items-center justify-center min-h-[400px]">
+<img alt="Universidad Panamericana Gold Crest" class="w-48 h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEauNivrDsgAq0wUCvPMvxxl8VrxlQPICCxOWuBBT8eCi39K3c8ShyMOXZWIFrPS9Qa5rnDYVfQ_G3h8Cq0GQnieTaa1KvHFP2hsdqiYmuHXTjByxFd4kX2xvyV5nsZHyF3_ZfxBEPx_8gjD7aV8dKWGGXzdlUMbutNPWJMLUhOYZ5zq7748_fCerBZCP21FPANuKfgPzfPVMKPpcGmn7F4pYK8DylvTdDdt8Gd4R1q_jAI2NsLqVeqvPRlFFu0IppwQJu3XnSA61E">
+<p class="mt-8 text-xs font-bold tracking-widest uppercase text-secondary-container">Institutional Crest (Dorado)</p>
+</div>
+</div>
+</section>
+<!-- Color Palette -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="text-[0.6875rem] font-bold tracking-[0.2em] uppercase text-primary">04</span>
+<h2 class="text-3xl font-serif-up">Color Architecture</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<div class="group cursor-pointer"><div class="aspect-[3/4] bg-[#8C1F3D] mb-4 transition-transform duration-500 group-hover:scale-[1.02]"></div><h4 class="font-serif-up text-lg">Institutional Maroon</h4><p class="text-xs text-stone-500 mt-1">HEX: #8C1F3D</p><p class="text-xs text-stone-400">Pantone 1955 CP</p></div>
+<div class="group cursor-pointer"><div class="aspect-[3/4] bg-[#003366] mb-4 transition-transform duration-500 group-hover:scale-[1.02]"></div><h4 class="font-serif-up text-lg">Preparatoria Blue</h4><p class="text-xs text-stone-500 mt-1">HEX: #003366</p><p class="text-xs text-stone-400">Pantone 288 CP</p></div>
+<div class="group cursor-pointer"><div class="aspect-[3/4] bg-[#00685E] mb-4 transition-transform duration-500 group-hover:scale-[1.02]"></div><h4 class="font-serif-up text-lg">Posgrados Green</h4><p class="text-xs text-stone-500 mt-1">HEX: #00685E</p><p class="text-xs text-stone-400">Pantone 329 CP</p></div>
+<div class="group cursor-pointer"><div class="aspect-[3/4] bg-[#C8A568] mb-4 transition-transform duration-500 group-hover:scale-[1.02]"></div><h4 class="font-serif-up text-lg">Accent Gold</h4><p class="text-xs text-stone-500 mt-1">HEX: #C8A568</p><p class="text-xs text-stone-400">Pantone 465 CP</p></div>
+<div class="group cursor-pointer"><div class="aspect-[3/4] bg-[#765A24] mb-4 transition-transform duration-500 group-hover:scale-[1.02]"></div><h4 class="font-serif-up text-lg">Prestige Bronze</h4><p class="text-xs text-stone-500 mt-1">HEX: #765A24</p><p class="text-xs text-stone-400">Accent Primary</p></div>
+</div>
+</section>
+<!-- Typography -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="text-[0.6875rem] font-bold tracking-[0.2em] uppercase text-primary">03</span>
+<h2 class="text-3xl font-serif-up">Typography Hierarchy</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="space-y-12">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-6">Tipografía Principal (EB Garamond / Noto Serif)</p>
+<div class="space-y-10">
+<div class="bg-surface-container-low p-6 border border-stone-100 rounded">
+<h1 class="text-5xl font-serif-up mb-2">Panamericana</h1>
+<p class="text-sm text-on-surface-variant leading-relaxed">Utilizada para la marca principal y títulos de alto impacto. Transmite tradición, excelencia académica y solidez institucional.</p>
+</div>
+<div><h2 class="text-4xl font-serif-up">Headline Medium</h2><p class="text-xs text-stone-500 mt-2 italic">Noto Serif Regular / 36px / Normal</p></div>
+<div><h3 class="text-2xl font-serif-up italic">Title Serif Italic</h3><p class="text-xs text-stone-500 mt-2 italic">Noto Serif Italic / 24px</p></div>
+</div>
+</div>
+</div>
+<div class="space-y-12">
+<div>
+<p class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-6">Tipografía UI (Seravek / Inter)</p>
+<div class="space-y-10">
+<div class="bg-surface-container-low p-6 border border-stone-100 rounded">
+<h1 class="text-4xl font-sans font-bold text-up-gold mb-2">Seravek</h1>
+<p class="text-sm text-on-surface-variant leading-relaxed">Nuestra tipografía de interfaz y textos técnicos. Seleccionada por su alta legibilidad en medios digitales.</p>
+</div>
+<div><p class="text-xl font-body leading-relaxed">Body Large – narrative content scale.</p><p class="text-xs text-stone-500 mt-2 italic">Inter Regular / 20px / 1.5 Line Height</p></div>
+<div><p class="text-base font-body leading-relaxed">Standard body copy for descriptions and everyday digital interaction.</p><p class="text-xs text-stone-500 mt-2 italic">Inter Regular / 16px</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Components -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<span class="text-[0.6875rem] font-bold tracking-[0.2em] uppercase text-primary">05</span>
+<h2 class="text-3xl font-serif-up">UI Components</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="bg-surface-container-low p-12 flex flex-col gap-12">
+<p class="text-xs font-bold tracking-widest uppercase text-stone-400">Button Archetypes</p>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-md text-sm font-semibold tracking-wide transition-all hover:brightness-110 active:scale-95">Primary CTA</button>
+<button class="border border-primary/20 text-primary px-8 py-3 rounded-md text-sm font-semibold tracking-wide hover:bg-surface-container transition-all">Outline Action</button>
+<button class="text-secondary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group">Learn More <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></button>
+</div>
+</div>
+<div class="space-y-8">
+<p class="text-xs font-bold tracking-widest uppercase text-stone-400">The Editorial Card</p>
+<div class="bg-white p-8 group transition-all duration-500 hover:shadow-[0_24px_48px_rgba(26,28,28,0.06)] border border-stone-100">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[0.6875rem] font-bold tracking-widest uppercase text-primary">Research &amp; Innovation</span>
+<span class="text-[0.6875rem] text-stone-400 font-medium">October 2024</span>
+</div>
+<h3 class="text-2xl font-serif-up mb-4 group-hover:text-primary transition-colors">Digital Humanities: The Intersection of History and AI</h3>
+<p class="text-stone-600 text-sm leading-relaxed mb-8">Exploring the boundaries of computational analysis in traditional historical narratives at the Mexico City Campus.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#eeeeee] w-full mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-[1440px] mx-auto">
+<div class="md:col-span-1">
+<div class="font-serif-up text-[#8C1F3D] font-black text-2xl mb-6">UP</div>
+<p class="text-xs text-stone-500 leading-relaxed">Dedicated to the formation of people who seek the truth and commit to it, promoting Christian humanism as an essential pillar of society.</p>
+</div>
+<div><h5 class="font-serif-up text-[#765a24] mb-6 font-bold">Quick Links</h5><ul class="space-y-4"><li><a class="text-stone-500 hover:text-[#8C1F3D] text-sm transition-all" href="#">Programs</a></li><li><a class="text-stone-500 hover:text-[#8C1F3D] text-sm transition-all" href="#">Admissions</a></li><li><a class="text-stone-500 hover:text-[#8C1F3D] text-sm transition-all" href="#">Alumni</a></li></ul></div>
+<div><h5 class="font-serif-up text-[#765a24] mb-6 font-bold">Legal</h5><ul class="space-y-4"><li><a class="text-stone-500 hover:text-[#8C1F3D] text-sm transition-all" href="#">Privacy Policy</a></li><li><a class="text-stone-500 hover:text-[#8C1F3D] text-sm transition-all" href="#">Institutional Integrity</a></li></ul></div>
+<div><h5 class="font-serif-up text-[#765a24] mb-6 font-bold">Campus</h5><p class="text-xs text-stone-500 mb-2">Mexico City</p><p class="text-xs text-stone-500 mb-2">Guadalajara</p><p class="text-xs text-stone-500">Aguascalientes</p></div>
+</div>
+<div class="px-12 py-8 bg-stone-200/50"><p class="text-xs text-stone-500 text-center">© 2024 Universidad Panamericana. Excellence in Education.</p></div>
+</footer>
+<script>
+document.querySelectorAll('.group.cursor-pointer').forEach(card => {
+  card.addEventListener('click', () => {
+    const hexEl = card.querySelector('p:nth-child(3)');
+    if (!hexEl) return;
+    const hex = hexEl.innerText.split(': ')[1];
+    navigator.clipboard.writeText(hex).then(() => {
+      const orig = hexEl.innerText;
+      hexEl.innerText = 'Copied!';
+      hexEl.classList.add('text-primary','font-bold');
+      setTimeout(() => { hexEl.innerText = orig; hexEl.classList.remove('text-primary','font-bold'); }, 1500);
+    });
+  });
+});
+</script>
+</body></html>
