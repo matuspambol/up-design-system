@@ -1,0 +1,111 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Admissions Dashboard | Universidad Panamericana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f5f0eb; }
+  .serif { font-family: 'Noto Serif', serif; }
+  .brand-maroon { color: #8C1F3D; }
+  .bg-brand-maroon { background-color: #8C1F3D; }
+  .brand-gold { color: #C8A568; }
+  .bg-brand-gold { background-color: #C8A568; }
+</style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Top Nav -->
+  <nav class="bg-brand-maroon text-white px-8 py-4 flex items-center justify-between">
+    <div>
+      <p class="text-xs tracking-widest uppercase text-white/60">Universidad Panamericana</p>
+      <p class="serif text-lg font-semibold">Admissions Portal</p>
+    </div>
+    <div class="flex items-center gap-4 text-sm">
+      <span class="text-white/70">Santiago López</span>
+      <button class="text-white/50 hover:text-white text-xs uppercase tracking-wider">Sign Out</button>
+    </div>
+  </nav>
+
+  <div class="max-w-5xl mx-auto p-8">
+    <h1 class="serif text-3xl font-semibold text-gray-800 mb-1">Applicant Portal</h1>
+    <p class="text-gray-500 text-sm mb-8">Welcome back, Santiago. Your journey towards academic excellence at Universidad Panamericana continues here.</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Status Card -->
+      <div class="lg:col-span-2 bg-white rounded-lg p-6 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="serif text-lg font-semibold text-gray-800">Application Status</h2>
+          <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">In Review</span>
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between text-xs text-gray-500 mb-1"><span>Completion Progress</span><span>75%</span></div>
+          <div class="w-full bg-gray-100 rounded-full h-2"><div class="bg-brand-maroon h-2 rounded-full" style="width:75%"></div></div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mt-6">
+          <button class="flex flex-col items-center gap-1 p-3 border border-gray-200 rounded hover:border-brand-maroon transition text-xs text-gray-600">
+            <span class="material-icons-outlined text-brand-maroon">headset_mic</span> Contact Admissions<span class="text-gray-400">Direct line to counselors</span>
+          </button>
+          <button class="flex flex-col items-center gap-1 p-3 border border-gray-200 rounded hover:border-brand-maroon transition text-xs text-gray-600">
+            <span class="material-icons-outlined text-brand-maroon">upload_file</span> Upload Document<span class="text-gray-400">Add missing credentials</span>
+          </button>
+          <button class="flex flex-col items-center gap-1 p-3 border border-gray-200 rounded hover:border-brand-maroon transition text-xs text-gray-600">
+            <span class="material-icons-outlined text-brand-maroon">auto_stories</span> View Resources<span class="text-gray-400">Guides and campus info</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Events -->
+      <div class="bg-white rounded-lg p-6 shadow-sm">
+        <h3 class="serif text-base font-semibold text-gray-800 mb-4 flex items-center gap-2"><span class="material-icons-outlined text-brand-gold text-lg">school</span> Upcoming Events</h3>
+        <div class="space-y-4">
+          <div class="border-l-2 border-brand-gold pl-3">
+            <p class="text-xs text-gray-400">Oct 28</p>
+            <p class="text-sm font-medium text-gray-800">Virtual Campus Tour</p>
+            <p class="text-xs text-gray-500">14:00 - 15:30 CST</p>
+          </div>
+          <div class="border-l-2 border-gray-200 pl-3">
+            <p class="text-xs text-gray-400">Nov 04</p>
+            <p class="text-sm font-medium text-gray-800">Alumni Meet &amp; Greet</p>
+            <p class="text-xs text-gray-500">18:00 - 19:30 CST</p>
+          </div>
+        </div>
+        <div class="mt-6 bg-gray-50 rounded p-3">
+          <p class="text-xs font-medium text-gray-700 mb-1">Did you know?</p>
+          <p class="text-xs text-gray-500">Universidad Panamericana has been ranked top 5 in national academic excellence for the last decade. Your future starts here.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Checklist -->
+    <div class="bg-white rounded-lg p-6 shadow-sm mt-6">
+      <h3 class="serif text-lg font-semibold text-gray-800 mb-4">Admission Checklist</h3>
+      <div class="space-y-3">
+        <div class="flex items-center gap-3 p-3 bg-green-50 rounded">
+          <span class="material-icons-outlined text-green-600">check_circle</span>
+          <div><p class="text-sm font-medium text-gray-800">Submit Personal Statement</p><p class="text-xs text-gray-400">Completed on Oct 12</p></div>
+          <span class="ml-auto text-xs text-green-600 font-medium">Completed</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 bg-yellow-50 rounded">
+          <span class="material-icons-outlined text-yellow-500">pending</span>
+          <div><p class="text-sm font-medium text-gray-800">Upload Official Transcripts</p><p class="text-xs text-gray-400">Awaiting verification</p></div>
+          <span class="ml-auto text-xs text-yellow-600 font-medium">Pending</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+          <span class="material-icons-outlined text-gray-400">event</span>
+          <div><p class="text-sm font-medium text-gray-800">Schedule Faculty Interview</p><p class="text-xs text-gray-400">Required for final decision</p></div>
+          <button class="ml-auto text-xs bg-brand-maroon text-white px-3 py-1 rounded">Schedule</button>
+        </div>
+        <div class="flex items-center gap-3 p-3 bg-red-50 rounded">
+          <span class="material-icons-outlined text-red-500">payments</span>
+          <div><p class="text-sm font-medium text-gray-800">Pay Application Fee</p><p class="text-xs text-gray-400">Due by Nov 15</p></div>
+          <span class="ml-auto text-xs text-red-600 font-medium">Unpaid</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
