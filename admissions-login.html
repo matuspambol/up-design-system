@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Admissions Portal | Universidad Panamericana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#765a24","primary": "#6c0128","primary-container": "#8c1f3d",
+              "surface": "#f9f9f9","on-surface": "#1a1c1c","on-surface-variant": "#564144",
+              "surface-container-high": "#e8e8e8","surface-container-lowest": "#ffffff",
+              "primary-fixed": "#ffd9dd","secondary-fixed-dim": "#e7c181",
+            },
+            fontFamily: { "headline": ["Noto Serif", "serif"], "body": ["Inter", "sans-serif"] },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-gradient { background: linear-gradient(135deg, #6c0128 0%, #8c1f3d 100%); }
+        .ghost-shadow { box-shadow: 0px 24px 48px rgba(26, 28, 28, 0.06); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col">
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm flex justify-between items-center px-8 h-20">
+<div class="text-xl font-bold tracking-tight text-[#8C1F3D] font-headline">Universidad Panamericana</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-sm font-medium" href="#">Admissions</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-sm font-medium" href="#">Programs</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-sm font-medium" href="#">Scholarships</a>
+<a class="text-stone-600 hover:text-[#8C1F3D] transition-colors text-sm font-medium" href="#">Contact</a>
+</div>
+<button class="editorial-gradient text-white px-6 py-2.5 text-sm font-semibold rounded transition-all duration-300 active:scale-95">Login</button>
+</nav>
+<main class="flex-grow flex items-stretch pt-20">
+<div class="hidden lg:flex w-1/2 relative overflow-hidden bg-[#6c0128]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoazDhBzQvQN0IOEKbkJ-BJNvHDV0waIRoUcWgIYq80drcPVRuzkK0QSId0BsXj1_hUSp-b-u-b0jbIioX3w3RnEKtm3jLZlHg_-yW0YLhOfLU8wJw6N5a_wALVgW2O00VMpTUqkD-R9T5ehV0EOxzmhihELEwR6y9nGZFWWL-lAdHG5KVII7wwgmpm6EWj4HrSy40gGbwscV0Q22Zs3829CBXzF_TuBv4IfNGEcqMTpaD1wiYHmw_E53lLKCKqkfJCgYtLMZL9xm0" alt="University campus">
+<div class="absolute inset-0 bg-gradient-to-tr from-[#6c0128]/90 to-transparent"></div>
+<div class="relative z-10 flex flex-col justify-end p-20 text-white max-w-2xl">
+<div class="w-12 h-0.5 bg-[#765a24] mb-8"></div>
+<h2 class="font-headline text-5xl leading-tight mb-6">Ubi Spiritus, Libertas</h2>
+<p class="font-body text-lg leading-relaxed opacity-90 italic">"Where the Spirit is, there is Liberty." Join a community dedicated to academic excellence and the search for truth.</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-surface">
+<div class="w-full max-w-md">
+<div class="mb-12">
+<span class="inline-block py-1 text-[0.6875rem] tracking-[0.05em] uppercase font-bold text-[#765a24] mb-2">Admissions Office</span>
+<h1 class="font-headline text-4xl text-on-surface mb-4 leading-tight">Sign In to Your Application</h1>
+<p class="text-on-surface-variant text-base leading-relaxed">Welcome back. Continue your journey towards becoming part of the Universidad Panamericana legacy.</p>
+</div>
+<div class="bg-white p-10 ghost-shadow rounded-sm space-y-8">
+<form class="space-y-6">
+<div class="space-y-1.5">
+<label class="block text-[0.6875rem] font-semibold tracking-wider text-on-surface-variant uppercase" for="email">Email Address</label>
+<input class="w-full bg-surface-container-high border-none focus:ring-0 focus:border-l-[3px] focus:border-primary transition-all px-4 py-4 text-on-surface" id="email" placeholder="e.g. name@applicant.com" type="email">
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center">
+<label class="block text-[0.6875rem] font-semibold tracking-wider text-on-surface-variant uppercase" for="password">Password</label>
+<a class="text-[0.6875rem] font-medium text-[#765a24] hover:text-[#6c0128] transition-colors uppercase tracking-wider" href="#">Forgot Password?</a>
+</div>
+<input class="w-full bg-surface-container-high border-none focus:ring-0 focus:border-l-[3px] focus:border-primary transition-all px-4 py-4 text-on-surface" id="password" placeholder="••••••••" type="password">
+</div>
+<button class="w-full editorial-gradient text-white py-4 font-semibold rounded-sm hover:opacity-90 active:scale-[0.98] transition-all shadow-md" type="submit">Sign In</button>
+</form>
+<div class="pt-6 text-center">
+<p class="text-sm text-on-surface-variant">New to Universidad Panamericana? <a class="text-[#6c0128] font-bold ml-1 hover:underline underline-offset-4" href="#">Create an Account</a></p>
+</div>
+</div>
+<div class="mt-12 flex flex-col gap-4 text-center">
+<div class="flex items-center justify-center gap-2 text-stone-400">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-xs uppercase tracking-widest font-medium">Secure Portal Access</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full border-t border-stone-200 bg-stone-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-8 gap-4">
+<div class="text-stone-500 text-sm">© 2025 Universidad Panamericana. All rights reserved.</div>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:text-[#8C1F3D] transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-[#8C1F3D] transition-colors text-sm" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-[#8C1F3D] transition-colors text-sm" href="#">Campus Security</a>
+</div>
+</div>
+</footer>
+</body></html>
